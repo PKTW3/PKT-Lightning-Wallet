@@ -30,9 +30,9 @@ To build this wallet, you need [golang](https://go.dev/dl/) and the
 Using `git`, clone the project from the repository:
 
 ```bash
-$ git clone https://github.com/cjdelisle/PKT-Lightning-Wallet
-$ cd PKT-Lightning-Wallet
-$ ./do
+git clone https://github.com/cjdelisle/PKT-Lightning-Wallet
+cd PKT-Lightning-Wallet
+./do
 ```
 
 This will build `pld`, and `pldctl` inside of the `./bin` sub-folder.
@@ -46,7 +46,7 @@ affect the final code without the build code, place them *after* the `./do` comm
 Cross-compiling for windows on a Mac:
 
 ```bash
-$ ./do GOOS=windows GOARCH=amd64
+./do GOOS=windows GOARCH=amd64
 ```
 
 The script will only accept env vars if they begin with CAPITAL letters, numbers and the underscore
