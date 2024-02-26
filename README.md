@@ -1,8 +1,8 @@
 # PKT Lightning Wallet
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://Copyfree.org)
-![Master branch build Status](https://github.com/pkt-cash/PKT-Lightning-Wallet/actions/workflows/go.yml/badge.svg?branch=master)
-![Develop branch build Status](https://github.com/pkt-cash/PKT-Lightning-Wallet/actions/workflows/go.yml/badge.svg?branch=develop)
+![Master branch build Status](https://github.com/cjdelisle/PKT-Lightning-Wallet/actions/workflows/go.yml/badge.svg?branch=master)
+![Develop branch build Status](https://github.com/cjdelisle/PKT-Lightning-Wallet/actions/workflows/go.yml/badge.svg?branch=develop)
 
 This repository contains the [PKT](https://pkt.cash) Lightning Wallet.
 This is a *command line* wallet, for a GUI app which embeds this wallet's
@@ -12,7 +12,7 @@ code, consider using:
 * https://play.google.com/store/apps/details?id=co.anode.anodium.playstore (Android with VPN included)
 
 This is a fully peer-to-peer wallet, so it does not rely on any support
-servers, only the [PKT-FullNode](https://github.com/pkt-cash/PKT-FullNode)s.
+servers, only the [PKT-FullNode](https://github.com/cjdelisle/PKT-FullNode)s.
 
 This wallet can be used in normal wallet mode, or in experimental Lightning
 mode.
@@ -30,9 +30,9 @@ To build this wallet, you need [golang](https://go.dev/dl/) and the
 Using `git`, clone the project from the repository:
 
 ```bash
-$ git clone https://github.com/pkt-cash/PKT-Lightning-Wallet
-$ cd PKT-Lightning-Wallet
-$ ./do
+git clone https://github.com/cjdelisle/PKT-Lightning-Wallet
+cd PKT-Lightning-Wallet
+./do
 ```
 
 This will build `pld`, and `pldctl` inside of the `./bin` sub-folder.
@@ -46,7 +46,7 @@ affect the final code without the build code, place them *after* the `./do` comm
 Cross-compiling for windows on a Mac:
 
 ```bash
-$ ./do GOOS=windows GOARCH=amd64
+./do GOOS=windows GOARCH=amd64
 ```
 
 The script will only accept env vars if they begin with CAPITAL letters, numbers and the underscore
