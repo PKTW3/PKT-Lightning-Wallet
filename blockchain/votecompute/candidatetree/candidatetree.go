@@ -1,7 +1,7 @@
 package candidatetree
 
 import (
-	electorium "github.com/pktw3/Electorium_go"
+	electorium "github.com/cjdelisle/Electorium_go"
 	"github.com/emirpasic/gods/trees/redblacktree"
 	"github.com/emirpasic/gods/utils"
 )
