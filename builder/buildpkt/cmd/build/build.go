@@ -210,16 +210,7 @@ func chkdir() {
 }
 
 func buildStr() string {
-	exe(0, "git", "update-index", "-q", "--refresh")
-	_, id, _ := exe(0, "git", "describe", "--tags", "HEAD")
-	id = strings.TrimSpace(id)
-	if x, _, _ := exe(exeCanFail, "git", "diff", "--quiet"); x != 0 {
-		if os.Getenv("PKT_FAIL_DIRTY") != "" {
-			die("Build is dirty, aborting")
-		}
-		return id + "-dirty"
-	}
-	return id
+	return "1.0.11-c"
 }
 
 func checkProtoc() {
